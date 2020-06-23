@@ -1,0 +1,15 @@
+<style>
+	#header ul li:first-child a{border: none;}
+</style>
+<div id="header_bg">
+	<div id="header">
+		<a href="index.html" class="logo"><img src="__PUBLIC__/Home/img/logo.png" title="泰一文化传播" alt="泰一文化传播"/></a>
+		<ul class="list_land navigate">
+			<foreach name="nav" item="nav">
+				<li><a href="/tyweb{$nav.url}" title="{nav.name}">{$nav.name}</a></li>
+			</foreach>
+			<div class="clear"></div>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>

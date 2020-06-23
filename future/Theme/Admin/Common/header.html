@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <title>CMS内容管理系统</title>
+  <meta name="keywords" content="Admin">
+  <meta name="description" content="Admin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/glyphicons.min.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/pages.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/boxed.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/demo.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/custom.css">
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/uniform.min.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/main.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Admin/js/custom.js"></script> 
+</head>
+
+<body>
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top" style="background-image: none; background-color: rgb(240, 240, 240);">
+  <div class="pull-left"> <a class="navbar-brand" href="#">
+    <div class="navbar-logo"><img src="__PUBLIC__/Admin/images/logo.png" alt="logo"></div>
+    </a> </div>
+  <div class="pull-right header-btns">
+    <a class="user"><span class="glyphicons glyphicon-user"></span> {$Think.session.name}</a>
+    <a href="{:U('login/logout')}" class="btn btn-default btn-gradient" type="button"><span class="glyphicons glyphicon-log-out"></span> 退出</a>
+  </div>
+</header>
+<!-- End: Header -->

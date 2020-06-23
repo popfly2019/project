@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*针对于about_us的样式定义*/
+
+#main {
+	width: 920px;
+	padding-left: 25px;
+}
+.left {
+	width: 147px;
+	padding-right: 40px;
+}
+.left .block_title h2 {
+	font: bold 23px/25px "宋体";
+}
+.left .block_title span {
+	padding-top: 13px;
+	font: normal 17px/17px "宋体";
+}
+
+.center {
+	float: left;
+	width: 502px; 
+}
+.center .block_title {
+	font: normal 13px/25px "黑体";
+	padding-bottom: 8px;
+	border-bottom: 1px dashed #b3b3b3;
+}
+.center .intro { padding: 24px 0px; }
+.center p { line-height: 22px; }
+.center p.intro { text-indent: 2em; }
+.center .map { padding-top: 8px; }
+.center .contact_info .block{ float: left; width: 50%;}
+.center .contact_info dt { font: bold 14px/25px "Arial"; }
+.center .contact_info dt span { padding-right: 32px; }
+.center .contact_info .email a:link { color: #5ac3f8; }
+.center .contact_info .qq { padding-top: 30px; }
+.center .contact_info .qq a {
+	line-height: 17px;
+	text-indent: 20px;
+	background: url("../img/about_us/qq.gif") no-repeat left center;
+}

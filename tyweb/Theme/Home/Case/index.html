@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>泰一文化传播</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/case.css" />
+	</head>
+	<body>
+		<include file="Common/header" />
+		<div id="main">
+			<div class="left">
+				<div class="pg_block_title">
+					<h2>TARGET WORKS</h2>
+					<span>成功案例</span>
+					<div class="clear"></div>
+				</div>	
+				<div class="description">
+					<img src="__PUBLIC__/Home/img/case/img.gif" alt="泰一文化传播" />
+					<h3>别具创想的策划、新锐的设计以及优质的服务<span class="quot">”</span></h3>
+					<ul class="list-stripe">
+						<li class="first"><p>—品牌策划、推广、影视包装</p></li>
+						<li><p>—公关活动策划，执行</p></li>
+						<li><p>—广告投放规划</p></li>
+						<li><p>—三维动画影片制作 、宣传、发布 、创意制作</p></li>
+					</ul>
+				</div>
+				<ul class="content">
+					<foreach name="list" item="list">
+					<li>
+						<div class="head">
+							<div class="image"><img src="/{$list.img}" /></div> 
+							<h3><a href="#">{$list.name}</a></h3>
+						</div>
+						<div class="content">
+							<p>项目:珠海国际赛车场赛事推广活动</p>
+							<p>客户：珠海国际赛车场</p>
+							<p>时间：2011年2月</p>
+						</div>
+						<p class="time">Update {$list.date}</p>
+						<div class="clear"></div>
+					</li>
+					</foreach>
+					<div class="clear"></div>
+				</ul>
+				<div class="page_navi">
+					<ul class="list_land page_navi">
+						{$page_str}
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="r_block_title t1">
+					<h3>成功案例</h3>		
+					<span>WORKS</span>
+					<div class="clear"></div>
+				</div>
+				<ul class="list_vertical">
+					<foreach name="right_case" item="cate">
+					<li><a href="#">{$cate.name}</a></li>
+					</foreach>
+				</ul>
+				<div class="r_block_title t2">
+					<h3>更新要闻</h3>
+					<span>NEWS</span>
+					<div class="clear"></div>
+				</div>
+				<ul class="list_new">
+					<foreach name="right_news" item="news">
+						<li>
+							<a href="{:U('news/'.$news['id'])}">{$news.name}</a> 
+							<p>News {$news.date|date="Y.m.d",###}</p>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<include file="Common/footer" />
+	</body>
+</html>

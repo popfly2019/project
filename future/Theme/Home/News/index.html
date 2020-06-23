@@ -1,0 +1,61 @@
+<include file="Common/header" />
+<div class="warp">
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">{$manage.title}</h1>
+        <p class="blog-post-meta">{$manage.date} by <a href="#">{$manage.author}</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+  
+              {$manage.content|htmlspecialchars_decode}
+
+          </div><!-- /.blog-post -->
+
+
+
+          <nav>
+            <ul class="pager">
+              <if condition="$uparticle eq ''">
+                <li><a href="#">没有数据</a></li>
+              <else />
+                <li><a href="{:U('news/'.$uparticle['id'])}">{$uparticle.title}</a></li>
+              </if>
+
+              <if condition="$nextarticle eq ''">
+                <li><a href="#">没有数据</a></li>
+              <else />
+                <li><a href="{:U('news/'.$nextarticle['id'])}">{$nextarticle.title}</a></li>
+              </if>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+            <h4>热点文章</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">网络专车能这么管吗？</a></li>
+              <li><a href="#">有些事情，罗永浩没有在发布会上告诉你</a></li>
+              <li><a href="#">离开索尼的 VAIO 要用什么产品走出日本</a></li>
+            </ol>
+          </div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+</div>
+<include file="Common/footer" />

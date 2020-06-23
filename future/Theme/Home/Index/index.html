@@ -1,0 +1,42 @@
+<include file="Common/header" />
+
+    <div class="container theme-showcase" role="main">
+
+      <p>
+        <a href="/future" class="btn btn-sm btn-default">全部</a>
+        <foreach name="nav" item="nav">
+          <if condition="$_GET['id'] eq $nav['id']">
+           <a href="{:U('index/'.$nav['id'])}" class="btn ban-sm btn-default active">{$nav.name}</a>
+          <else />
+            <a href="{:U('index/'.$nav['id'])}" class="btn btn-sm btn-default">{$nav.name}</a>
+          </if>
+        </foreach>
+      </p>
+
+      <div class="row all-event-list mt20">
+        <foreach name="news" item="news">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="widget-event">
+              <a href="{:U('news/'.$news['id'])}"><img class="widget-event__banner lazy" src="/{$news.img}"></a>
+              <div class="widget-event__info">
+                <h2 class="h4 title"><a href="{:U('news/'.$news['id'])}">{$news.title}</a></h2>
+                <ul class="widget-event__meta">
+                  <li>时间：{$news.date}</li>
+                </ul>
+                <a class="btn btn-default btn-sm" href="{:U('news/'.$news['id'])}">查看</a>
+              </div>
+            </div>
+          </div>
+        </foreach>
+      </div>
+
+
+      <div class="text-center">
+        <ul class="pagination">
+         {$page_str}
+        </ul>
+      </div>
+
+
+    </div>
+<include file="Common/footer" />

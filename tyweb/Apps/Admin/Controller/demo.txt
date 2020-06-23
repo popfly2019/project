@@ -1,0 +1,14 @@
+function changeAll(){
+      var chk_value =[]; 
+      $('input[name="id[]"]:checked').each(function(){ 
+        chk_value.push($(this).val()); 
+      }); 
+      var submit = confirm(chk_value.length==0 ?'你还没有选择任何内容！':'您是否需要将id '+chk_value+'审核'); 
+      if (submit) {
+        window.location.href = "changeSelected/sell_id/"+chk_value;
+        return false;
+      } else{
+        return false;
+      };
+      document.check.submit();
+    }

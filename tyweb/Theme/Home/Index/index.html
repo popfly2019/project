@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>泰一文化传播</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/index.css" />
+	</head>
+	<body>
+		<include file="Common/header" />
+		<div id="main">
+			<div class="banner">
+				<div class="hd">
+					<a class="prev"></a>
+					<a class="next"></a>
+				</div>
+				<div class="bd">
+					<ul>
+						<foreach name="ad" item="ad">
+							<li><img src="/{$ad.img}" title="广告" alt="banner"/></li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<div class="index_title">
+				<h3>Latest Works</h3>			
+				<a href="case.html" class="more">+ more..</a>
+				<div class="clear"></div>
+			</div>
+			<div class="left">
+				<a href="#" class="show" title="展示墙"><img src="/{$news[0].img}" style="width: 315px;height: 175px;border-radius: 5px;" /></a>
+				<h3 class="block_title">关于泰一文化传播</h3>	
+				<div class="description">
+					<p><a href="about_us.html">广州市泰一文化传播有限公司(Target)</a> 是一家集品牌策划/公关活动/3D影视制作/媒体传播为一体的文化传播公司。</p>
+					<p>别具创想的策划、新锐的设计以及优质的服务使泰一文化(Target) )迅速成为行内的新型文化传播先锋。</p>
+					<p>至今，已成为融合科技文化、时尚发布、大型会议等优势资源的综合实力雄厚的公司。</p>
+				</div>
+				<a href="#" class="more"><img src="__PUBLIC__/Home/img/index/more.gif" /></a>
+			</div>
+			<div class="center">
+				<a href="#" class="show" title="展示墙"><img src="/{$news[1].img}" style="width: 315px;height: 175px;border-radius: 5px;" /></a>
+				<h3 class="block_title">业务体系</h3>	
+				<div class="description">
+					<ul class="arr_list">
+						<foreach name="yewu" item="news_1">
+							<li><a href="{:U('news/'.$news_1[id])}">{$news_1.name}</a></li>
+						</foreach>
+					</ul>
+				</div>
+				<a href="#" class="more"><img src="__PUBLIC__/Home/img/index/more.gif" /></a>
+			</div>
+			<div class="right">
+				<a href="#" class="show" title="展示墙"><img src="/{$news[2].img}" style="width: 315px;height: 175px;border-radius: 5px;" /></a>
+				<h3 class="block_title">公司动态</h3>	
+				<div class="description">
+					<dl class="arr_list">
+						<foreach name="gsnews" item="news_2">
+							<dt class="first"><a href="#">{$news_2.name}</a></dt>
+							<dd><p>{$news_2.description}</p></dd>
+						</foreach>
+					</dl>
+				</div>
+				<a href="#" class="more"><img src="__PUBLIC__/Home/img/index/more.gif" /></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+<include file="Common/footer" />
+</html>

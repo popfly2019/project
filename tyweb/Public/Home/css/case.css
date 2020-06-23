@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*针对case.html所做的样式定义*/
+
+#main {
+	width: 920px;
+	padding-left: 25px;
+}
+#main .left { width: 704px; }
+.left .description {
+	padding: 23px 0px 23px 18px;
+	border-bottom: 1px dashed #b2b2b2; 
+}
+.left .description img {
+	float: left;
+	padding-right: 28px;
+}
+.left .description h3 {
+	font-size: 17px;
+	padding-bottom: 18px;
+	color: #333131;
+}
+.left .description li p { line-height: 17px; }
+.left ul.content { padding: 50px 0px 0px 0px; }
+.left ul.content li {
+	float: left;
+	width: 223px;
+	margin: 75px 11px 0px 0px;
+}
+.left ul.content li.first {
+	margin-top: 0px;
+}
+.left ul.content .head .image{
+	width: 217px;
+	height: 109px;
+	overflow: hidden;
+	padding: 2px;
+	border: 1px solid #bbbbbb;
+}
+.left ul.content .head .image img {
+	width: 217px;
+	height: 109px;
+}
+.left ul.content li .content{ 
+	border-top: 1px dashed #b2b2b2;
+	border-bottom: 1px dashed #b2b2b2;
+}
+.left ul.content .head h3 a {
+	padding-top: 10px;
+	color: black;
+	font: bold 12px/34px "宋体";
+}
+.left ul.content .head h3 a:hover { color: #84c60a; }
+.left ul.content .content { padding: 10px 0px; }
+.left ul.content .content p { line-height: 26px; }
+.left ul.content p.time {
+	padding-top: 14px;
+	float: right;
+	color: black;
+}
+.left .page_navi {
+	padding: 9px 0px 35px 0px;
+	float: right;
+}
+#main .right {
+	float: right;
+	width: 190px;
+}
+
